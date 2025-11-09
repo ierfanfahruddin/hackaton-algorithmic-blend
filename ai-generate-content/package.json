@@ -1,0 +1,27 @@
+{
+  "name": "ai-generate-content",
+  "version": "1.0.0",
+  "description": "AI-powered content and image generation system",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "content-generation",
+    "image-generation",
+    "google-cloud",
+    "vertex-ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vertexai": "^0.1.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
