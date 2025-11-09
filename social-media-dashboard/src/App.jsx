@@ -4,6 +4,7 @@ import MainLayout from './components/layout/MainLayout';
 import FacebookAnalytics from './pages/facebook/FacebookAnalytics';
 import InstagramAnalytics from './pages/instagram/InstagramAnalytics';
 import PostContent from './pages/postContent/PostContent';
+import Chatbot from './pages/chatbot/Chatbot';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/facebook" element={<FacebookAnalytics />} />
             <Route path="/instagram" element={<InstagramAnalytics />} />
             <Route path="/post-content" element={<PostContent />} />
+            <Route path="/chatbot" element={<Chatbot />} />
           </Routes>
         </MainLayout>
       </div>

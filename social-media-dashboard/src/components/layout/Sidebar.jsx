@@ -1,6 +1,6 @@
 import React from 'react';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import { Facebook, Instagram } from '@mui/icons-material';
+import { Drawer, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Facebook, Instagram, Chat } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -9,7 +9,8 @@ const Sidebar = () => {
   const menuItems = [
     { text: 'Facebook Analytics', icon: <Facebook />, path: '/facebook' },
     { text: 'Instagram Analytics', icon: <Instagram />, path: '/instagram' }
-    ,{ text: 'Post Content', icon: <Facebook />, path: '/post-content' }
+    ,{ text: 'Ai Respon', icon: <Facebook />, path: '/post-content' }
+    ,{ text: 'Chatbot', icon: <Chat />, path: '/chatbot' }
   ];
 
   return (
@@ -29,8 +30,7 @@ const Sidebar = () => {
       </Typography>
       <List>
         {menuItems.map((item) => (
-          <ListItem
-            button
+          <ListItemButton
             key={item.text}
             onClick={() => navigate(item.path)}
           >
@@ -38,7 +38,7 @@ const Sidebar = () => {
               {item.icon}
             </ListItemIcon>
             <ListItemText primary={item.text} />
-          </ListItem>
+          </ListItemButton>
         ))}
       </List>
     </Drawer>
